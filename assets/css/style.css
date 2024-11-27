@@ -1,0 +1,9 @@
+.header-dropdown{
+    display: inline;
+}
+.header-dropdown-content {
+    display: none;
+    position: absolute;
+}
+.header-dropdown-content a:hover {background-color: #f1f1f1;}
+.header-dropdown:hover .header-dropdown-content{display:block;}
