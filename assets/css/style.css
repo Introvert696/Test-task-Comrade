@@ -1,5 +1,6 @@
 /* connect font */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+/* first setting html tag */
 a {
     text-decoration: none;
     color: black;
@@ -14,7 +15,73 @@ header {
     background-color: white;
     border-radius: 0px 0px 48px 48px;
     position: fixed;
+    z-index: 2;
 }
+/* Styles */
+h1 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 110%;
+}
+l {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 20px; 
+    line-height: 150%;
+}
+/* Buttons */
+.primary {
+    font-family: "Manrope", sans-serif;
+    border: none;
+    border-radius: 72px;
+    text-align: center;
+    background-color: #F37021;
+    color: white;
+    height: 72px;
+    font-size: 16px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.primary:hover {
+    background-color:#F6F3EC;
+    color: black;
+}
+.second {
+    border: 1px solid black;
+    border-radius: 72px;
+    text-align: center;
+    background-color: none;
+    color: black;
+    height: 72px;
+    font-size: 16px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.second:hover {
+    border: none;
+    background-color: #DB6610;
+    color: white;
+}
+.third{
+    border: 1px solid white;
+    border-radius: 72px;
+    height: 72px;
+    color: white;
+    font-size: 16px;
+    padding-left: 4%;
+    padding-right: 4%;
+    background: none;
+}
+.third:hover{
+    background-color: white;
+    color: black;
+}
+/* help styles */
+.flex {
+    display: flex;
+}
+/* header section */
 .logo {
     height: 57px;
 
@@ -25,7 +92,7 @@ header {
 .header-items {
     width: 90%;
     margin:auto;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
 }
 .nav-items {
@@ -43,14 +110,18 @@ header {
 }
 header button {
     margin-left: 30px;
-    width: 212px;
+    /* width: 212px; */
 }
 /* Dropdown Menu */
 .nav-dropdown{
     display: inline;
 }
+.nav-dropdown a:hover {
+    color:#F37021;
+}
 .nav-dropdown-content {
-    display: none;
+    display:none;
+    opacity: 0;
     position: absolute;
     width: 20%;
     background-color: #F6F3EC;
@@ -58,58 +129,52 @@ header button {
     line-height: 50px;
     padding: 20px;
     border-radius: 0 0 24px 24px;
-    margin-top: 3%;
+    /* margin-top: 3%; */
+    /* padding-top:3%; */
 }
-.nav-dropdown-content a:hover {background-color: #f1f1f1;}
-.nav-dropdown:hover .nav-dropdown-content{display:block;}
-/* Buttons */
-.primary {
-    font-family: "Manrope", sans-serif;
-    border: none;
-    border-radius: 72px;
-    text-align: center;
-    background-color: #F37021;
-    color: white;
-    height: 72px;
-    font-size: 16px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+.nav-dropdown-content a:hover {color:#F37021;}
+.nav-dropdown:hover .nav-dropdown-content {
+    display:block;
+    animation-duration: 0.5s;
+    animation-name: smooth-apperance;
+    animation-fill-mode: forwards;
 }
-.primary:hover {
-    background-color:#F6F3EC;
-    color: black;
+@keyframes smooth-apperance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-.second {
-    border: 1px solid black;
-    border-radius: 72px;
-    text-align: center;
-    background-color: none;
-    color: black;
-    height: 72px;
-    font-size: 16px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-}
-.second:hover {
-    border: none;
-    background-color: #DB6610;
-    color: white;
-}
-.third{
-    border: 1px solid white;
-    border-radius: 72px;
-    height: 72px;
-    color: white;
-    font-size: 16px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    background: none;
-}
-.third:hover{
-    background-color: white;
-    color: black;
-}
-/* help styles */
-.flex {
+
+/* first screen section */
+.first-screen {
+    background-image: url('/assets/img/first-screen.jpg');
+    /* background-size: cover; */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 690px;
     display: flex;
+    align-items: center;
+    border-radius: 0 0 72px 72px;
+}
+.content-first-screen {
+    margin: auto;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.title-content-first-screen {
+    margin-top: 20px;
+}
+.btns-content-first-screen{
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    width: 65%;
+    justify-content: space-between;
+}
+.btns-content-first-screen button {
+    min-width: 237px;
 }
