@@ -54,6 +54,23 @@ xs {
     font-size: 14px; 
     line-height: 150%; 
 }
+.m {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px; 
+    line-height: 150%; 
+}
+.input {
+    border: 1px solid #D9D9D9;
+    font-size: 16px;
+    min-height: 48px;
+    border-radius:   16px;
+}
+.input:focus {
+    color: #5E5E5E;
+    outline: none;
+    border: 1px red solid;
+}
 /* Buttons */
 .primary {
     font-family: "Manrope", sans-serif;
@@ -292,4 +309,212 @@ header button {
     background-image: url('/assets/img/gallerybg.png');
     height: 1039px;
     margin-top: 100px;
+    background-size: cover;
+    border-radius: 72px;
+    color: white;
+    justify-content: space-between;
+}
+.title-row-gallery {
+    padding-top: 100px; 
+    width: 90%;  
+    margin: auto;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.item-title-row-gallery {
+    width: 40%;
+}
+.pre-title-row-gallery {
+    width: 60%;
+}
+.pre-title-row-gallery button {
+    margin-top: 40px; 
+}
+.img-gallery {
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.img-gallery div {
+    width: 49%;
+    
+}
+.img-gallery div  img{
+    width: 100%;
+    height: 535px;
+    border-radius: 24px;
+}
+.change-img-gallery p{
+    position: absolute;
+    margin: 2% 0 0 3%;
+    color: black;
+    background-color: white;
+    padding: 16px 32px;
+    border-radius: 72px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.control-gallery {
+    padding-top: 2%;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-controll-gallery {
+    width: 60%;
+}
+.btns-control-gallery {
+    width: 50%;
+    color: white;
+    justify-content: end;
+}
+.btns-control-gallery button {
+    padding: 0 5%;
+    margin-left: 5px;
+}
+.link-controll-gallery a {
+    font-size: 16px;
+    color: white;
+}
+.item-img-gallery  {
+    justify-content: space-between;
+    width: 90%;
+}
+.item-img-gallery div{
+    width: 100%;
+    margin: 4% 0px 0px 5%;
+    color: black;
+}
+.item-img-gallery div p {
+    background-color: white;
+}
+
+/* testimonials */
+.testimonials {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+}
+.title-testimonials {
+    
+    justify-content: space-between;
+}
+.title-testimonials p {
+    align-items: center;
+    width: 55%;
+    color: #5E5E5E;
+}
+.row-item-postimonials{
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.item-postimonials {
+    width: 26%;
+    /* height: 389px; */
+    background-color: #FAFAFA;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5E5E5E;
+    line-height: 150%;
+    padding: 3%;
+}
+.item-postimonials p {
+    margin-top: 20px;
+}
+.item-postimonials span {
+    padding-top: 20px;
+}
+.star-item-postimonials img {
+    height: 22px;
+    width: 22px;
+}
+.author-item-postimonials {
+    font-size: 16px;
+    font-weight: 400;
+}
+/* feedback section */
+.feedback {
+    
+    height: 894px;
+    background-image: url("/assets/img/feedback.png");
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 72px;
+}
+.items-feedback {
+    height: 75%;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.items-feedback img {
+    height: 100%;
+    width: 55%;
+    border-radius: 32px;
+}
+.items-feedback form {
+    width: 41%;
+}
+.items-feedback form p {
+    color: #5E5E5E;
+    margin-top: 30px;
+}
+.input-form-feedback {
+    position: relative;
+    margin: 5px 0;
+    width: 100%;
+}
+.inputs-form-feedback{
+    margin-top: 20px;
+}
+.form-input {
+    font-family: "Manrope", sans-serif;
+    padding: 2px 0px 0px 15px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    color: #5E5E5E;
+    height: 48px;
+}
+.form-input:focus {
+    border: 1px solid #D9D9D9;
+}
+.form-input input::content{
+    border: 1px solid #5E5E5E;
+}
+.form-label {
+    position: absolute;
+    left: 15px;
+    top: 35%;
+    font-size: 16px;
+    transition: 0.2s ease all;
+    color: #999;
+    pointer-events: none; /* Чтобы метка не мешала вводу */
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    top: 15%;
+    font-size: 10px;
+    color: #5E5E5E; /* Цвет метки при фокусе */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.inputs-row {
+    justify-content: space-between;
+}
+.inputs-row > .input-form-feedback input{
+    width: 90%;
+}
+.input-form-feedback input{
+ width: 95%;
+}
+#message {
+    height: 122px;
 }
