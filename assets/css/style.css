@@ -1,5 +1,55 @@
 /* connect font */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Optimized code */
+.flex {
+    display: flex;
+}
+.flex-dir-reverse {
+    flex-direction: row-reverse;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-end {
+    justify-content: end;
+}
+.m-auto {
+    margin:auto;
+}
+.mt-10px {
+    margin-top: 10px;
+}
+.mt-20px{
+    margin-top: 20px;
+}
+.mt-30px {
+    margin-top: 30px;
+}
+.mt-50px {
+    margin-top: 50px;
+}
+.mt-100px {
+    margin-top: 100px;
+}
+.mt-5pc {
+    margin-top: 5%;
+}
+.c-white{
+    color: white;
+}
+.c-black{
+    color: black;
+}
+.c-gray {
+    color: #5E5E5E;
+}
+.w-100pc {
+    width: 100%;
+}
+.w-49pc {
+    width: 49%;
+}
 /* first setting html tag */
 a {
     text-decoration: none;
@@ -18,11 +68,10 @@ header {
     position: fixed;
     z-index: 2;
 }
-/* Styles */
 h1 {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 56px;
     line-height: 110%;
 }
 h2 {
@@ -37,7 +86,20 @@ h3 {
     font-size: 40px;
     line-height: 120%;
 }
-l {
+h4 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+}
+h5 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+/* text class */
+.l {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 20px; 
@@ -49,7 +111,7 @@ l {
     font-size: 16px; 
     line-height: 150%; 
 }
-xs {
+.xs {
     font-family: "Manrope", sans-serif;
     font-weight: 500;
     font-size: 14px; 
@@ -61,27 +123,64 @@ xs {
     font-size: 18px; 
     line-height: 150%; 
 }
-.input {
-    border: 1px solid #D9D9D9;
-    font-size: 16px;
-    min-height: 48px;
-    border-radius:   16px;
+.s {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 150%;
 }
-.input:focus {
-    color: #5E5E5E;
+.xs {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+    line-height: 150%;
+}
+.btn-text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px; 
+    line-height: 150%;
+}
+.subhead {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+}
+.input-heading {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 150%;
+}
+/* inputs */
+input, textarea,select {
+    border: 1px solid #D9D9D9;
+    font-size: 14px;
+    min-height: 48px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    text-indent: 2%; /* Отступ текста внутри input */
+}
+
+input,textarea, select:focus {
+    color: #151515;
     outline: none;
-    border: 1px red solid;
+}
+textarea{
+    padding-top: 4%;
+    height: 122px;
+    padding-left: 2%;
 }
 /* Buttons */
 .primary {
-    font-family: "Manrope", sans-serif;
     border: none;
     border-radius: 72px;
     text-align: center;
     background-color: #F37021;
     color: white;
-    height: 72px;
-    font-size: 16px;
+    min-height: 72px;
+    min-width: 237px;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -89,46 +188,34 @@ xs {
     background-color:#F6F3EC;
     color: black;
 }
-.second {
+.secondary {
     border: 1px solid black;
     border-radius: 72px;
     text-align: center;
     background-color: transparent;
     color: black;
-    height: 72px;
-    font-size: 16px;
+    min-height: 72px;
     padding-left: 4%;
     padding-right: 4%;
-    min-width: 18%;
+    min-width: 150px;
 }
-.second:hover {
+.secondary:hover {
     border: none;
     background-color: #DB6610;
     color: white;
 }
-.third{
+.thirdy{
     border: 1px solid white;
     border-radius: 72px;
-    height: 72px;
+    min-height: 72px;
     color: white;
-    font-size: 16px;
     padding-left: 4%;
     padding-right: 4%;
-    background: none;
+    background: transparent;
 }
-.third:hover{
+.thirdy:hover{
     background-color: white;
     color: black;
-}
-/* help styles */
-.flex {
-    display: flex;
-}
-.subhead {
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 120%;
 }
 /* header section */
 .logo {
@@ -140,16 +227,10 @@ xs {
 }
 .header-items {
     width: 90%;
-    margin:auto;
-    justify-content: space-between;
     align-items: center;
 }
 .nav-items {
-    display: flex;
     width: 57%;
-    font-size: 18px;
-    justify-content: space-between;
-    font-family: "Manrope", sans-serif;
     font-weight: 600;
     margin-left: 3%;
    
@@ -178,8 +259,6 @@ header button {
     line-height: 50px;
     padding: 20px;
     border-radius: 0 0 24px 24px;
-    /* margin-top: 3%; */
-    /* padding-top:3%; */
 }
 .nav-dropdown-content a:hover {color:#F37021;}
 .nav-dropdown:hover .nav-dropdown-content {
@@ -200,39 +279,27 @@ header button {
 /* first screen section */
 .first-screen {
     background-image: url('/assets/img/first-screen.jpg');
-    /* background-size: cover; */
     background-size:cover;
     background-repeat: no-repeat;
     height: 690px;
-    display: flex;
     align-items: center;
     border-radius: 0 0 72px 72px;
 }
 .content-first-screen {
-    margin: auto;
     color: white;
     text-align: center;
     align-items: center;
 }
-.title-content-first-screen {
-    margin-top: 20px;
-}
+
 .btns-content-first-screen{
-    display: flex;
-    margin: auto;
-    margin-top: 25px;
     width: 65%;
-    justify-content: space-between;
 }
 .btns-content-first-screen button {
     min-width: 237px;
 }
 /* successes section */
 .successes {
-    display: flex;
-    justify-content: space-between;
     width: 85%;
-    margin: auto;
     align-items: center;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -266,20 +333,15 @@ header button {
     margin-bottom: 20px; 
 }
 .item-services {
-    display: flex;
     width: 90%;
-    margin: auto;
     height: 466px;
     background-color: #fff;
     align-items: center;
     border-radius:32px;
-    margin-top: 20px;
+    padding: 0 2%;
 }
 .item-services img {
-    height: 90%;
     height: 418px;
-    margin-left: 2%;
-    margin-right: 2%;
     border-radius:32px;
 }
 .text-item-services {
@@ -288,21 +350,6 @@ header button {
     margin-left: 5%;
     
 }
-.text-item-services h3 {
-    margin-top: 10px;
-    color: black;
-}
-.text-item-services xs {
-    margin-top: 20px;
-    
-}
-.s {
-    margin-top: 20px;
-}
-.text-item-services button {
-    margin-top: 30px;
-    width: 150px;
-}
 .flex-reverse {
     flex-direction: row-reverse;
 }
@@ -310,18 +357,13 @@ header button {
 .gallery {
     background-image: url('/assets/img/gallerybg.png');
     height: 1039px;
-    margin-top: 100px;
     background-size: cover;
     border-radius: 72px;
     color: white;
-    justify-content: space-between;
 }
 .title-row-gallery {
     padding-top: 100px; 
     width: 90%;  
-    margin: auto;
-    /* align-items: center; */
-    justify-content: space-between;
 }
 .item-title-row-gallery {
     width: 40%;
@@ -329,14 +371,8 @@ header button {
 .pre-title-row-gallery {
     width: 60%;
 }
-.pre-title-row-gallery button {
-    margin-top: 40px; 
-}
 .img-gallery {
-    justify-content: space-between;
     width: 90%;
-    margin: auto;
-    margin-top: 5%;
 }
 .img-gallery div {
     width: 49%;
@@ -360,8 +396,6 @@ header button {
 .control-gallery {
     padding-top: 2%;
     width: 90%;
-    margin: auto;
-    justify-content: space-between;
     align-items: center;
 }
 .link-controll-gallery {
@@ -370,7 +404,6 @@ header button {
 .btns-control-gallery {
     width: 50%;
     color: white;
-    justify-content: end;
 }
 .btns-control-gallery button {
     padding: 0 5%;
@@ -380,10 +413,7 @@ header button {
     font-size: 16px;
     color: white;
 }
-.item-img-gallery  {
-    justify-content: space-between;
-    width: 90%;
-}
+
 .item-img-gallery div{
     width: 100%;
     margin: 4% 0px 0px 5%;
@@ -396,35 +426,18 @@ header button {
 /* testimonials */
 .testimonials {
     width: 90%;
-    margin: auto;
-    margin-top: 80px;
-}
-.title-testimonials {
-    
-    justify-content: space-between;
 }
 .title-testimonials p {
     align-items: center;
     width: 55%;
     color: #5E5E5E;
 }
-.row-item-postimonials{
-    justify-content: space-between;
-    margin-top: 30px;
-}
 .item-postimonials {
-    width: 26%;
-    /* height: 389px; */
+    width: 26%;  
     background-color: #FAFAFA;
     border-radius: 32px;
-    font-size: 18px;
-    font-weight: 500;
     color: #5E5E5E;
-    line-height: 150%;
     padding: 3%;
-}
-.item-postimonials p {
-    margin-top: 20px;
 }
 .item-postimonials span {
     padding-top: 20px;
@@ -442,18 +455,13 @@ header button {
     height: 894px;
     background-image: url("/assets/img/feedback.png");
     background-size: cover;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
     border-radius: 72px;
     margin-bottom: -200px;
     position: inherit;
 }
 .items-feedback {
-    margin: auto;
     width: 90%;
-    margin-top: 7%;
-    justify-content: space-between;
 }
 .img-items-feedback{
  width: 58%;
@@ -463,30 +471,25 @@ header button {
     height: 100%;
     border-radius: 32px;
 }
-.items-feedback form {
+/* Forms with inputs */
+.form-feedback {
     width: 39%;
 }
-.items-feedback form p {
-    color: #5E5E5E;
-    margin-top: 10px;
+.inputs-form-feedback, .inputs-form-feedback {
+    width: 100%;
 }
 .input-form-feedback {
     position: relative;
     margin: 5px 0;
+}
+.input-form-feedback input {
     width: 100%;
 }
-.inputs-form-feedback{
-    margin-top: 20px;
-}
+
 .form-input {
     font-family: "Manrope", sans-serif;
-    padding: 2px 0px 0px 15px;
-    border: 1px solid #ccc;
+    /* padding: 2px 0px 0px 0px; */
     border-radius: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    outline: none;
-    color: #5E5E5E;
     height: 48px;
 }
 .form-input:focus {
@@ -499,7 +502,9 @@ header button {
     position: absolute;
     left: 15px;
     top: 35%;
+    color: #5E5E5E;
     font-size: 16px;
+    font-weight: 600;
     transition: 0.2s ease all;
     color: #999;
     pointer-events: none; /* Чтобы метка не мешала вводу */
@@ -512,19 +517,17 @@ header button {
     font-weight: 700;
     text-transform: uppercase;
 }
-.inputs-row {
-    justify-content: space-between;
+
+.form-group {
+    display: flex;
+    gap: 10px;
+  }
+.inputs-form-feedback {
+    display: flex;
+    flex-direction: column;
 }
-.inputs-row > .input-form-feedback input{
-    width: 90%;
-}
-.input-form-feedback input{
- width: 95%;
-}
-#message {
-    height: 122px;
-    width: 95%;
-}
+
+
 form button {
     width: 100%;
     margin-top: 3px;
@@ -546,8 +549,6 @@ footer {
 }
 .footer-items {
     width: 95%;
-    justify-content: space-between;
-    margin: auto;
     color: white;
 }
 .column-footer{
@@ -674,7 +675,6 @@ width: 18%;
     }
     .img-item-services {
         width: 100%;
-        display: flex;
         margin-top: 10px;
         justify-content: space-around;
         
@@ -957,9 +957,6 @@ width: 18%;
         margin-top: 45%;
         display: block;
     }
-    .btns-text-footer {
-        display: flex;
-    }
     .imgs-text-footer {
         margin-left: -50%;
     }
@@ -973,14 +970,10 @@ width: 18%;
     .xs {
         font-size: 14px;
     }
-    .link-column-footer {
-        display: flex;
-    }
     .mob {
         display: none;
     }
     .links-text-footer {
-        display: flex;
         justify-content: space-between;
         text-align: left;
     }
