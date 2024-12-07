@@ -32,6 +32,9 @@
 .mt-100px {
     margin-top: 100px;
 }
+.mt-2pc{
+    margin-top: 2%;
+}
 .mt-5pc {
     margin-top: 5%;
 }
@@ -46,6 +49,9 @@
 }
 .w-100pc {
     width: 100%;
+}
+.w-90pc {
+    width: 90%;
 }
 .w-49pc {
     width: 49%;
@@ -123,18 +129,7 @@ h5 {
     font-size: 18px; 
     line-height: 150%; 
 }
-.s {
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 16px; 
-    line-height: 150%;
-}
-.xs {
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 14px; 
-    line-height: 150%;
-}
+
 .btn-text {
     font-family: "Manrope", sans-serif;
     font-weight: 600;
@@ -162,7 +157,10 @@ input, textarea,select {
     box-sizing: border-box;
     text-indent: 2%; /* Отступ текста внутри input */
 }
-
+select {
+    background-color: white;
+    color: gray;
+}
 input,textarea, select:focus {
     color: #151515;
     outline: none;
@@ -212,6 +210,7 @@ textarea{
     padding-left: 4%;
     padding-right: 4%;
     background: transparent;
+    width: 45%;
 }
 .thirdy:hover{
     background-color: white;
@@ -601,10 +600,35 @@ width: 18%;
 .created-site span {
     margin-left: 18%;
 }
+
+.btns-control-testimonials {
+    display: none;
+    width: 45%;
+
+}   
+.btns-control-testimonials button{   
+    color: black;
+    border: 1px solid black;
+    height: 100%;
+}
+/* block menu */
+.block-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+.items-block-menu{
+    margin-top: 25%;
+}
 /* mobile adaptation */
 @media screen and (max-width : 1024px) {
 
 }
+
 @media screen and (max-width : 800px) {
     header {
         height: 57px;
@@ -617,167 +641,7 @@ width: 18%;
     }
     .nav-items{
         display: none;
-    }
-    .logo {
-        width: 150px;
-        height: 38px;
-    }
-    .logo img{
-        margin-left: 20px;
-    }
-    .header-items {
-        width: 100%;
-        margin:unset;
-    }
-    h1 {
-        font-size: 42px;
-    }
-    .first-screen {
-        height: 550px;
-        border-radius: 40px;
-    }
-    .content-first-screen{
-        width: 100%;
-        margin-top: 25%;
-    }
-    .btns-content-first-screen {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    .btns-content-first-screen button {
-        margin-top: 20px;
-    }
-    .primary {
-        width: 90%;
-    }
-    .third {
-        width: 90%;
-    }
-    l {
-        font-size: 18px;
-    }
-    .title-content-first-screen {
-        width: 90%;
-        margin: auto;
-    }
-    .successes {
-        display: block;
-    }
-    .item-successes {
-        margin-top: 30px;
-    }
-    .item-services {
-        display: block;
-        height: unset;
-        padding-bottom: 10px;
-        width:90% ;
-    }
-    .img-item-services {
-        width: 100%;
-        margin-top: 10px;
-        justify-content: space-around;
         
-    }
-    .img-item-services img {
-        margin-top: 20px;
-        height: 210px;
-        width: 94%;
-        
-    }
-    .subhead {
-        font-size: 18px;
-        width: 90%;
-        margin-top: 10px;
-    }
-    h3 {
-        font-size: 28px;
-    }
-    .gallery{
-        background-position: center;
-        border-radius: 58px;
-    }
-    .title-row-gallery {
-        display: block;
-    }
-    h2 {
-        font-size: 32px;
-    }
-    .pre-title-row-gallery {
-        width: 100%;
-        margin-top: 15px;
-    }
-    .m {
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .pre-title-row-gallery button {
-        width: 70%;
-    }
-    .img-gallery {
-        display: block;
-    }
-    .img-gallery div{
-        width: 100%;
-    }
-    .img-gallery div img {
-        height: 230px;
-    }
-    .change-img-gallery {
-        margin-top: 10px;
-    }
-    .control-gallery {
-        display: block;
-    }
-    .btns-control-gallery {
-        width: 45%;
-        margin-top: 25px;
-    }
-    .control-gallery {
-        margin-top: 25px;
-    }
-    .row-item-postimonials {
-        height: 350px;
-        display: inline-block;
-        overflow: scroll;
-        scroll-snap-type: proximity;
-    }
-    .item-postimonials {
-        width: unset;
-        padding: 25px;
-    }
-    .title-testimonials {
-        display: block;
-    }
-    .title-testimonials p{
-        width: unset;
-    }
-    .img-items-feedback {
-        display: none;
-    }
-    .items-feedback form {
-        width: unset;
-        margin-top: 30px;
-    }
-    .form-feedback h1 {
-        font-size: 32px;
-    }
-    .form-feedback p {
-        width: 88%;
-    }
-}
-@media screen and (max-width : 420px) {
-    header {
-        height: 57px;
-        border-radius: 8px;
-        width: 100%;
-        position: fixed;
-    }
-    header button {
-        display: none;
-    }
-    .nav-items{
-        display: none;
     }
     .logo {
         width: 150px;
@@ -869,10 +733,6 @@ width: 18%;
         width: 100%;
         margin-top: 15px;
     }
-    .m {
-        font-size: 16px;
-        font-weight: 400;
-    }
     .pre-title-row-gallery button {
         width: 70%;
     }
@@ -900,6 +760,7 @@ width: 18%;
     }
     .row-item-postimonials {
         display: block ruby;
+        overflow: scroll;
     }
     .item-postimonials {
         width: unset;
@@ -986,5 +847,40 @@ width: 18%;
         text-align: left;
         font-size: 18px;
         text-overflow: clip;
+    }
+    .inputs-row-feedback{
+        display: block;
+    }
+    .input-form-feedback {
+        width: 100%;
+    }
+    .input-form-feedback select{
+        width: 90%;
+    }
+    .btns-control-testimonials {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* header block */
+    header {
+        height: 100%;
+    }
+    .header-items {
+        align-items: unset;
+        margin-top: 10px;
+        display: block;
+    }
+    .nav-items {
+        display: block;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .nav-dropdown {
+        display: block;
+        margin-top: 20px;
+    }
+    .nav-dropdown-content {
+        display: inline;
+        z-index: 2000;
     }
 }
