@@ -1,5 +1,8 @@
 let navLinksArr = document.querySelectorAll(".nav-dropdown");
-
+const openBtn = document.querySelector("#openBtn");
+const closeBtn = document.querySelector("#closeBtn");
+const leftMenu = document.querySelector('.nav-items');
+const header = document.querySelector('header');
 
 navLinksArr.forEach(el => {
     const item = el.childNodes[1];
@@ -23,8 +26,15 @@ function openMenu(el){
     console.log(newItem.classList.add('next-nav-menu'));
 }
 function openRight(){
-    const leftMenu = document.querySelector('.nav-items');
-    const header = document.querySelector('header');
     leftMenu.classList.remove('hide');
     header.classList.add('h-100pc');
+    openBtn.classList.add('hide');
+    closeBtn.classList.remove('hide');
+}
+
+function closeRight(){
+    leftMenu.classList.add('hide');
+    header.classList.remove('h-100pc');
+    openBtn.classList.remove('hide');
+    closeBtn.classList.add('hide');
 }

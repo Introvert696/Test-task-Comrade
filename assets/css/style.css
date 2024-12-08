@@ -219,13 +219,16 @@ textarea{
     padding-left: 4%;
     padding-right: 4%;
     background: transparent;
-    width: 45%;
+    min-width: 45%;
 }
 .thirdy:hover{
     background-color: white;
     color: black;
 }
 /* header section */
+.header-btn {
+    display: none;
+}
 .logo {
     height: 57px;
 
@@ -286,7 +289,7 @@ header button {
 
 /* first screen section */
 .first-screen {
-    background-image: url('/assets/img/first-screen.jpg');
+    background-image: url('/assets/img/first-screen.png');
     background-size:cover;
     background-repeat: no-repeat;
     height: 690px;
@@ -349,7 +352,7 @@ header button {
     padding: 0 2%;
 }
 .item-services img {
-    height: 418px;
+    /* height: 418px; */
     border-radius:32px;
 }
 .text-item-services {
@@ -716,7 +719,7 @@ width: 18%;
     }
     .img-item-services img {
         margin-top: 20px;
-        height: 210px;
+        height: 100%;
         width: 94%;
         
     }
@@ -917,5 +920,9 @@ width: 18%;
         animation-duration: 0.5s;
         animation-name:unset;
         animation-fill-mode: forwards;
+    }
+    .header-btn {
+        display: block;
+        margin-right: 5%;
     }
 }

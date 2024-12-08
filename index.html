@@ -13,14 +13,15 @@
 <body>
     <header class="flex">
         <div class="header-items flex jc-sb m-auto">
-            <div class="flex jc-sb w-98pc">
+            <div class="flex jc-sb">
                 <div class="logo flex">
                     <img src="assets/img/logo.png" alt="logo">
                     <img src="assets/img/logo text.png" alt="logo text">
                 </div>
                 <div class="header-btn">
                     <img src="assets/img/phone.svg" alt="logo" class="h-41px">
-                    <img src="assets/img/menu.svg" alt="logo" class="h-41px" onclick="openRight()">
+                    <img src="assets/img/menu.svg" alt="logo" id="openBtn" class="h-41px" onclick="openRight()">
+                    <img src="assets/img/exit.svg" alt="logo" id="closeBtn" class="h-41px hide" onclick="closeRight()" >
                 </div>
             </div>
 
