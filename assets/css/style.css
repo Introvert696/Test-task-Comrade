@@ -464,7 +464,7 @@ header button {
 /* feedback section */
 .feedback {
     height: 894px;
-    background-image: url("/assets/img/feedback.png");
+    background-image: url("/assets/img/feedback.webp");
     background-size: cover;
     align-items: center;
     border-radius: 72px;
