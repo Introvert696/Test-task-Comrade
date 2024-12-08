@@ -289,7 +289,7 @@ header button {
 
 /* first screen section */
 .first-screen {
-    background-image: url('/assets/img/first-screen.png');
+    background-image: url('/assets/img/first-screen.webp');
     background-size:cover;
     background-repeat: no-repeat;
     height: 690px;
@@ -366,7 +366,7 @@ header button {
 }
 /* Gallery section */
 .gallery {
-    background-image: url('/assets/img/gallerybg.png');
+    background-image: url('/assets/img/gallerybg.webp');
     height: 1039px;
     background-size: cover;
     border-radius: 72px;
