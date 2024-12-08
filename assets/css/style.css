@@ -288,8 +288,9 @@ header button {
 }
 
 /* first screen section */
+/* huli ty ne robish blya */
 .first-screen {
-    background-image: url('assets/img/first-screen.webp');
+    background-image: url('assets/img/first-screen.webp'); 
     background-size:cover;
     background-repeat: no-repeat;
     height: 690px;
